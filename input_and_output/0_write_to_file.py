@@ -1,10 +1,17 @@
+"""Write to file exercise"""
+
+
 def write_to_file(data_, filename):
+    """Write to file function"""
     length = 0
+
     with open(filename, 'w', encoding="utf-8") as write_file:
         write_file.write(data_)
+
     with open(filename, 'r', encoding="utf-8") as read_file:
         for line in read_file:
             length += len(line)
+
     return length
 
 

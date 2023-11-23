@@ -1,7 +1,11 @@
+"""To JSON exercise"""
+
 import json
 
 
 def to_json(data):
+    """Serializing data"""
+
     return json.dumps(data)
     # YOUR CODE HERE
 

@@ -1,4 +1,9 @@
+"""Read a file exercise"""
+
+
 def read_a_file(filename):
+    """Read 3-rd line function"""
+
     with open(filename, 'r', encoding="utf-8") as read_file:
         line = read_file.readlines()[2]
         print(line)

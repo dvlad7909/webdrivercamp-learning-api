@@ -1,8 +1,12 @@
+"""From JSON file exercise"""
+
 import json
 
 
-def from_json_file(file_name):
-    with open(file_name, 'r', encoding="utf-8") as json_file:
+def from_json_file(file_name_):
+    """Read JSON object from the file"""
+
+    with open(file_name_, 'r', encoding="utf-8") as json_file:
         return json.load(json_file)
 
 

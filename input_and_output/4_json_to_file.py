@@ -1,7 +1,11 @@
+"""JSON to file exercise"""
+
 import json
 
 
-def to_json_file(file_name):
+def to_json_file(file_name_):
+    """Serializes the object to a file"""
+
     data_object = {"list": [1, 2, 3, 4, 5],
                    "tuple": (1, 2, 3, 4, 5),
                    "string": "Hello World!",
@@ -10,7 +14,7 @@ def to_json_file(file_name):
                    "int": 123,
                    "float": 3.14,
                    "dict": {"abc": True, "Hello": "World", 10: [2, 3, 4]}}
-    with open(file_name, 'w', encoding="utf-8") as json_file:
+    with open(file_name_, 'w', encoding="utf-8") as json_file:
         json.dump(data_object, json_file)
     # YOUR CODE HERE
 
@@ -23,5 +27,5 @@ if __name__ == "__main__":
 
     to_json_file(file_name)
 
-    with open(file_name, "r") as f:
+    with open(file_name, "r", encoding="utf-8") as f:
         print(f.read())
