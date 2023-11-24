@@ -5,7 +5,7 @@ def append_to_file(data_, file_name_):
     """Append function"""
 
     with open(file_name_, 'a', encoding="utf-8") as append_file:
-        append_file.write(data_)
+        # append_file.write(data_)
         number_of_chars = append_file.write(data_)
 
     return number_of_chars
